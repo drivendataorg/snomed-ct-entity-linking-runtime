@@ -1,0 +1,8 @@
+black
+conda-lock
+pip-tools
+ruff
+numpy
+pandas
+typer
+scipy

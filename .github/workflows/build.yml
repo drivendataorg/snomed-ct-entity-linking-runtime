@@ -1,0 +1,77 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    paths: ["runtime/**", ".github/workflows/build.yml"]
+  pull_request:
+    paths: ["runtime/**", ".github/workflows/build.yml"]
+  workflow_dispatch:
+    inputs:
+      publishDev:
+        description: 'Publish dev image as cpu-{sha} and gpu-{sha}'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        proc: ["cpu", "gpu"]
+    env:
+      SHOULD_PUBLISH_LATEST: ${{ github.ref == 'refs/heads/main' && vars.PUBLISH_LATEST_ON_MAIN != '' }}
+      SHOULD_PUBLISH: |
+        ${{
+          github.ref == 'refs/heads/main' && vars.PUBLISH_LATEST_ON_MAIN != ''
+          || github.event_name == 'workflow_dispatch' && inputs.publishDev
+        }}
+      LOGIN_SERVER: ${{ secrets.LOGIN_SERVER }}
+      IMAGE: snomedct-competition
+      SHA_TAG: ${{ matrix.proc }}-${{ github.sha }}
+      LATEST_TAG: ${{ matrix.proc }}-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Image
+        run: |
+          docker build runtime \
+            --build-arg CPU_OR_GPU=${{ matrix.proc }} \
+            --tag $LOGIN_SERVER/$IMAGE:$SHA_TAG \
+            ${{ fromJson(env.SHOULD_PUBLISH_LATEST) && '--tag $LOGIN_SERVER/$IMAGE:$LATEST_TAG' || '' }}
+
+      - name: Check image size
+        run: |
+          docker image list $LOGIN_SERVER/$IMAGE --format "{{.Tag}}: {{.Size}}" | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: Tests packages in container
+        run: |
+          docker run $LOGIN_SERVER/$IMAGE:$SHA_TAG python -m pytest tests
+
+      - name: Log into Azure
+        if: ${{ fromJson(env.SHOULD_PUBLISH) }}
+        uses: azure/login@v1
+        with:
+          client-id: ${{secrets.AZURE_CLIENT_ID}}
+          tenant-id: ${{secrets.AZURE_TENANT_ID}}
+          subscription-id: ${{secrets.AZURE_SUBSCRIPTION_ID}}
+
+      - name: Log into ACR with Docker
+        if: ${{ fromJson(env.SHOULD_PUBLISH) }}
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ env.LOGIN_SERVER }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Push image to ACR
+        if: ${{ fromJson(env.SHOULD_PUBLISH) }}
+        run: |
+          docker push $LOGIN_SERVER/$IMAGE --all-tags
