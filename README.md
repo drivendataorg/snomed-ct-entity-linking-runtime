@@ -30,7 +30,7 @@ Changes to the repository are documented in [CHANGELOG.md](./CHANGELOG.md).
 #### [2. Testing a submission locally](#testing-a-submission-locally)
 - [Code submission format](#code-submission-format)
 - [Running your submission locally](#running-your-submission-locally)
-- [Smoke tests](#smoke-tests)
+- [Logging and smoke tests](#logging-and-smoke-tests)
 - [Runtime network access](#runtime-network-access)
 
 #### [3. Updating runtime packages](#updating-runtime-packages)
