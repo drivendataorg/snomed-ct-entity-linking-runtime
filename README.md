@@ -87,7 +87,7 @@ If you were ready to make a real submission to the competition, you would upload
 We also provide a script for you to evaluate your generated annotations. This script takes paths to the predicted annotations file and the corresponding ground truth annotations file and evaluates the [macro-averaged character-level IoU metric](https://www.drivendata.org/competitions/258/competition-snomed-ct/page/817/#performance-metric).
 
 ```
-python scripts/scoring.py submission/submission.csv data/training_annotations.csv
+python scripts/scoring.py submission/submission.csv data/train_annotations.csv
 #> macro-averaged character IoU metric: 0.0000
 ```
 
