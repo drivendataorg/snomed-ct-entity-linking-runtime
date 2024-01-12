@@ -32,7 +32,7 @@ jobs:
           github.ref == 'refs/heads/main' && vars.PUBLISH_LATEST_ON_MAIN != ''
           || github.event_name == 'workflow_dispatch' && inputs.publishDev
         }}
-      LOGIN_SERVER: ${{ secrets.LOGIN_SERVER }}
+      LOGIN_SERVER: snomedcta100.azurecr.io
       IMAGE: snomedct-competition
       SHA_TAG: ${{ matrix.proc }}-${{ github.sha }}
       LATEST_TAG: ${{ matrix.proc }}-latest
