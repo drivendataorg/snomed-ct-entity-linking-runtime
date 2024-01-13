@@ -9,6 +9,7 @@ dependencies:
   - cupy=12.3.0
   - diskcache=5.6.3
   - einops=0.7.0
+  - faiss-gpu=1.7.4
   - gensim=4.3.2
   - jsonpickle=3.0.2
   - keras=2.13.1
