@@ -4,6 +4,7 @@ import subprocess
 import pytest
 
 packages = [
+    "faiss",
     "gensim",
     "keras",
     "numpy",
@@ -84,3 +85,10 @@ def test_spacy():
             ents.append(span)
         doc.ents = ents
         db.add(doc)
+
+
+@pytest.mark.skipif(not GPU_AVAILABLE, reason="No GPU available")
+def test_faiss_n_gpus():
+    import faiss
+    assert faiss.get_num_gpus() > 0
+
