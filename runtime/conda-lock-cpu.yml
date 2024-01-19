@@ -47,15 +47,15 @@ package:
   category: main
   optional: false
 - name: absl-py
-  version: 2.0.0
+  version: 2.1.0
   manager: conda
   platform: linux-64
   dependencies:
-    python: '>=3.6'
-  url: https://conda.anaconda.org/conda-forge/noarch/absl-py-2.0.0-pyhd8ed1ab_0.conda
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/absl-py-2.1.0-pyhd8ed1ab_0.conda
   hash:
-    md5: 2361c56617987bb6623dcbf8bab5cdc4
-    sha256: 99e2a54d079d91909d6d12d2336d792fd2ab666620d2ac761cd09d0e552dd44d
+    md5: 035d1d58677c13ec93122d9eb6b8803b
+    sha256: 6c84575fe0c3a860c7b6a52cb36dc548c838503c8da0f950a63a64c29b443937
   category: main
   optional: false
 - name: accelerate
@@ -1255,7 +1255,7 @@ package:
   category: main
   optional: false
 - name: jsonschema
-  version: 4.20.0
+  version: 4.21.0
   manager: conda
   platform: linux-64
   dependencies:
@@ -1266,10 +1266,10 @@ package:
     python: '>=3.8'
     referencing: '>=0.28.4'
     rpds-py: '>=0.7.1'
-  url: https://conda.anaconda.org/conda-forge/noarch/jsonschema-4.20.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/jsonschema-4.21.0-pyhd8ed1ab_0.conda
   hash:
-    md5: 1116d79def5268414fb0917520b2bbf1
-    sha256: 77aae609097d06deedb8ef8407a44b23d5fef95962ba6fe1c959ac7bd6195296
+    md5: 63dd555524e29934d1d3c9f7001ec4bd
+    sha256: 3562f0b6abaab7547ac3d86c5cd3eec30f0dc7072e136556ec168c8652911af7
   category: main
   optional: false
 - name: jsonschema-specifications
@@ -1666,7 +1666,7 @@ package:
   dependencies:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
-    libxml2: '>=2.11.5,<2.12.0a0'
+    libxml2: '>=2.11.5,<3.0.0a0'
   url: https://conda.anaconda.org/conda-forge/linux-64/libhwloc-2.9.3-default_h554bfaf_1009.conda
   hash:
     md5: f36ddc11ca46958197a45effdd286e45
@@ -1936,7 +1936,7 @@ package:
   category: main
   optional: false
 - name: libxml2
-  version: 2.11.6
+  version: 2.12.4
   manager: conda
   platform: linux-64
   dependencies:
@@ -1945,10 +1945,10 @@ package:
     libiconv: '>=1.17,<2.0a0'
     libzlib: '>=1.2.13,<1.3.0a0'
     xz: '>=5.2.6,<6.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.11.6-h232c23b_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.12.4-h232c23b_1.conda
   hash:
-    md5: 427a3e59d66cb5d145020bd9c6493334
-    sha256: e6183d5e57ee48cc1fc4340477c31a6bd8be4d3ba5dded82cbca0d5280591086
+    md5: 53e951fab78d7e3bab40745f7b3d1620
+    sha256: f6828b44da29bbfbf367ddbc72902e84ea5f5de933be494d6aac4a35826afed0
   category: main
   optional: false
 - name: libzlib
@@ -2138,6 +2138,18 @@ package:
   hash:
     md5: 2dcd1acca05c11410d4494d7fc7dfa2a
     sha256: 63415fe64e99f8323d0191d45ea5b1ec3973317e728b9071267ffb7ff3b38364
+  category: main
+  optional: false
+- name: more-itertools
+  version: 10.2.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.8'
+  url: https://conda.anaconda.org/conda-forge/noarch/more-itertools-10.2.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: d5c98e9706fdc5328d49a9bf2ce5fb42
+    sha256: 9e49e9484ff279453f0b55323a3f0c7cb97440c74f69eecda1f4ad29fae5cd3c
   category: main
   optional: false
 - name: mpc
@@ -2473,6 +2485,28 @@ package:
   hash:
     md5: a5b55d1cb110cdcedc748b5c3e16e687
     sha256: 35ad5cab1d9c08cf98576044bf28f75e62f8492afe6d1a89c94bbe93dc8d7258
+  category: main
+  optional: false
+- name: peft
+  version: 0.7.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    accelerate: '>=0.21.0'
+    huggingface_hub: '>=0.17.0'
+    numpy: '>=1.17'
+    packaging: '>=20.0'
+    psutil: ''
+    python: '>=3.8'
+    pytorch: '>=1.13.0'
+    pyyaml: ''
+    safetensors: ''
+    tqdm: ''
+    transformers: '>=4.18.0'
+  url: https://conda.anaconda.org/conda-forge/noarch/peft-0.7.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: 3222d56a5f719a3a0530dac6e387fcf2
+    sha256: b76e458a5ef31095cf72d2528446654b2c06fd9c960bb74f5749c17f09f196e5
   category: main
   optional: false
 - name: pip
@@ -3108,17 +3142,17 @@ package:
   category: main
   optional: false
 - name: rpds-py
-  version: 0.16.2
+  version: 0.17.1
   manager: conda
   platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     python: '>=3.10,<3.11.0a0'
     python_abi: 3.10.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/rpds-py-0.16.2-py310hcb5633a_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/rpds-py-0.17.1-py310hcb5633a_0.conda
   hash:
-    md5: 849507c9b0652ec09c110bcc5213f482
-    sha256: ebd8fb3040ec0ba40fe72da8136b847edd6f878a8f6862e534165d721a8af0d8
+    md5: 57f7538a66c2db6572d8ef7f0a103fc2
+    sha256: c1ecf5a6746aadd2d3a7bbde172a6c822efa659eb158b9b406ebebb1bc7e4f75
   category: main
   optional: false
 - name: rsa
@@ -3965,7 +3999,7 @@ package:
   category: main
   optional: false
 - name: yarl
-  version: 1.9.3
+  version: 1.9.4
   manager: conda
   platform: linux-64
   dependencies:
@@ -3974,10 +4008,10 @@ package:
     multidict: '>=4.0'
     python: '>=3.10,<3.11.0a0'
     python_abi: 3.10.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/yarl-1.9.3-py310h2372a71_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/yarl-1.9.4-py310h2372a71_0.conda
   hash:
-    md5: 10246f66639d9ca55e790410f0dbb465
-    sha256: 159e9e292f841477dd1e4c897c055d364472720c79b16fa329faee1e7b878564
+    md5: 4ad35c8f6a64a6ab708780dad603aef4
+    sha256: 0851ac8c66e99faa9c885a2905c2b7b227a051c008cfaed97eeec0f82a9cdbcf
   category: main
   optional: false
 - name: zipp
