@@ -14,6 +14,8 @@ dependencies:
   - gensim=4.3.2
   - jsonpickle=3.0.2
   - keras=2.13.1
+  - langchain=0.1.4
+  - langchain-community=0.0.16
   - lightgbm=4.1.0
   - loguru=0.7
   - more-itertools=10.2.0
@@ -38,6 +40,6 @@ dependencies:
   - tensorflow-base=2.13.1=cuda118*
   - tensorflow=2.13.1=cuda118*
   - tqdm=4.66
-  - transformers=4.35.2
+  - transformers=4.37.1
   - xarray=2023.11.0
   - xformers::xformers==0.0.23=*cu11.8*
