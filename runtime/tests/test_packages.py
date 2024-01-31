@@ -7,6 +7,8 @@ packages = [
     "faiss",
     "gensim",
     "keras",
+    "langchain",
+    "langchain_community",
     "numpy",
     "pandas",
     "scipy",
@@ -90,5 +92,5 @@ def test_spacy():
 @pytest.mark.skipif(not GPU_AVAILABLE, reason="No GPU available")
 def test_faiss_n_gpus():
     import faiss
-    assert faiss.get_num_gpus() > 0
 
+    assert faiss.get_num_gpus() > 0
