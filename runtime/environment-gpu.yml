@@ -43,3 +43,5 @@ dependencies:
   - transformers=4.37.1
   - xarray=2023.11.0
   - xformers::xformers==0.0.23=*cu11.8*
+  - pip:
+    - vllm
