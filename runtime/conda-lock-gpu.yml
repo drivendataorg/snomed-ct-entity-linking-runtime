@@ -5756,3 +5756,434 @@ package:
     sha256: 607cbeb1a533be98ba96cf5cdf0ddbb101c78019f1fda063261871dad6248609
   category: main
   optional: false
+- name: aioprometheus
+  version: 23.12.0
+  manager: pip
+  platform: linux-64
+  dependencies:
+    orjson: '*'
+    quantile-python: '>=1.1'
+    starlette: '>=0.14.2'
+  url: https://files.pythonhosted.org/packages/91/21/c9e882ea8a7189b7d71ffb709db24708113896e81a25e074a17f9874d8be/aioprometheus-23.12.0-py3-none-any.whl
+  hash:
+    sha256: b1a77259131153ef820b494e76439b278434eaf2a5e25dc0b8bf3d835f455960
+  category: main
+  optional: false
+- name: annotated-types
+  version: 0.6.0
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/28/78/d31230046e58c207284c6b2c4e8d96e6d3cb4e52354721b944d3e1ee4aa5/annotated_types-0.6.0-py3-none-any.whl
+  hash:
+    sha256: 0641064de18ba7a25dee8f96403ebc39113d0cb953a01429249d5c7564666a43
+  category: main
+  optional: false
+- name: fastapi
+  version: 0.109.2
+  manager: pip
+  platform: linux-64
+  dependencies:
+    pydantic: '>=1.7.4,<1.8 || >1.8,<1.8.1 || >1.8.1,<2.0.0 || >2.0.0,<2.0.1 || >2.0.1,<2.1.0
+      || >2.1.0,<3.0.0'
+    starlette: '>=0.36.3,<0.37.0'
+    typing-extensions: '>=4.8.0'
+  url: https://files.pythonhosted.org/packages/bf/97/60351307ab4502908d29f64f2801a36709a3f1888447bb328bc373d6ca0e/fastapi-0.109.2-py3-none-any.whl
+  hash:
+    sha256: 2c9bab24667293b501cad8dd388c05240c850b58ec5876ee3283c47d6e1e3a4d
+  category: main
+  optional: false
+- name: h11
+  version: 0.14.0
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl
+  hash:
+    sha256: e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761
+  category: main
+  optional: false
+- name: httptools
+  version: 0.6.1
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/65/e7/dd5ba95c84047118a363f0755ad78e639e0529be92424bb020496578aa3b/httptools-0.6.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  hash:
+    sha256: e57997ac7fb7ee43140cc03664de5f268813a481dff6245e0075925adc6aa185
+  category: main
+  optional: false
+- name: ninja
+  version: 1.11.1.1
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/6d/92/8d7aebd4430ab5ff65df2bfee6d5745f95c004284db2d8ca76dcbfd9de47/ninja-1.11.1.1-py2.py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl
+  hash:
+    sha256: 84502ec98f02a037a169c4b0d5d86075eaf6afc55e1879003d6cab51ced2ea4b
+  category: main
+  optional: false
+- name: nvidia-cublas-cu12
+  version: 12.1.3.1
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/37/6d/121efd7382d5b0284239f4ab1fc1590d86d34ed4a4a2fdb13b30ca8e5740/nvidia_cublas_cu12-12.1.3.1-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: ee53ccca76a6fc08fb9701aa95b6ceb242cdaab118c3bb152af4e579af792728
+  category: main
+  optional: false
+- name: nvidia-cuda-cupti-cu12
+  version: 12.1.105
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/7e/00/6b218edd739ecfc60524e585ba8e6b00554dd908de2c9c66c1af3e44e18d/nvidia_cuda_cupti_cu12-12.1.105-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: e54fde3983165c624cb79254ae9818a456eb6e87a7fd4d56a2352c24ee542d7e
+  category: main
+  optional: false
+- name: nvidia-cuda-nvrtc-cu12
+  version: 12.1.105
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/b6/9f/c64c03f49d6fbc56196664d05dba14e3a561038a81a638eeb47f4d4cfd48/nvidia_cuda_nvrtc_cu12-12.1.105-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: 339b385f50c309763ca65456ec75e17bbefcbbf2893f462cb8b90584cd27a1c2
+  category: main
+  optional: false
+- name: nvidia-cuda-runtime-cu12
+  version: 12.1.105
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/eb/d5/c68b1d2cdfcc59e72e8a5949a37ddb22ae6cade80cd4a57a84d4c8b55472/nvidia_cuda_runtime_cu12-12.1.105-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: 6e258468ddf5796e25f1dc591a31029fa317d97a0a94ed93468fc86301d61e40
+  category: main
+  optional: false
+- name: nvidia-cudnn-cu12
+  version: 8.9.2.26
+  manager: pip
+  platform: linux-64
+  dependencies:
+    nvidia-cublas-cu12: '*'
+  url: https://files.pythonhosted.org/packages/ff/74/a2e2be7fb83aaedec84f391f082cf765dfb635e7caa9b49065f73e4835d8/nvidia_cudnn_cu12-8.9.2.26-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: 5ccb288774fdfb07a7e7025ffec286971c06d8d7b4fb162525334616d7629ff9
+  category: main
+  optional: false
+- name: nvidia-cufft-cu12
+  version: 11.0.2.54
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/86/94/eb540db023ce1d162e7bea9f8f5aa781d57c65aed513c33ee9a5123ead4d/nvidia_cufft_cu12-11.0.2.54-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: 794e3948a1aa71fd817c3775866943936774d1c14e7628c74f6f7417224cdf56
+  category: main
+  optional: false
+- name: nvidia-curand-cu12
+  version: 10.3.2.106
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/44/31/4890b1c9abc496303412947fc7dcea3d14861720642b49e8ceed89636705/nvidia_curand_cu12-10.3.2.106-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: 9d264c5036dde4e64f1de8c50ae753237c12e0b1348738169cd0f8a536c0e1e0
+  category: main
+  optional: false
+- name: nvidia-cusolver-cu12
+  version: 11.4.5.107
+  manager: pip
+  platform: linux-64
+  dependencies:
+    nvidia-cublas-cu12: '*'
+    nvidia-nvjitlink-cu12: '*'
+    nvidia-cusparse-cu12: '*'
+  url: https://files.pythonhosted.org/packages/bc/1d/8de1e5c67099015c834315e333911273a8c6aaba78923dd1d1e25fc5f217/nvidia_cusolver_cu12-11.4.5.107-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: 8a7ec542f0412294b15072fa7dab71d31334014a69f953004ea7a118206fe0dd
+  category: main
+  optional: false
+- name: nvidia-cusparse-cu12
+  version: 12.1.0.106
+  manager: pip
+  platform: linux-64
+  dependencies:
+    nvidia-nvjitlink-cu12: '*'
+  url: https://files.pythonhosted.org/packages/65/5b/cfaeebf25cd9fdec14338ccb16f6b2c4c7fa9163aefcf057d86b9cc248bb/nvidia_cusparse_cu12-12.1.0.106-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: f3b50f42cf363f86ab21f720998517a659a48131e8d538dc02f8768237bd884c
+  category: main
+  optional: false
+- name: nvidia-nccl-cu12
+  version: 2.18.1
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/a4/05/23f8f38eec3d28e4915725b233c24d8f1a33cb6540a882f7b54be1befa02/nvidia_nccl_cu12-2.18.1-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: 1a6c4acefcbebfa6de320f412bf7866de856e786e0462326ba1bac40de0b5e71
+  category: main
+  optional: false
+- name: nvidia-nvjitlink-cu12
+  version: 12.3.101
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/1e/07/bf730d44c2fe1b676ad9cc2be5f5f861eb5d153fb6951987a2d6a96379a9/nvidia_nvjitlink_cu12-12.3.101-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: 64335a8088e2b9d196ae8665430bc6a2b7e6ef2eb877a9c735c804bd4ff6467c
+  category: main
+  optional: false
+- name: nvidia-nvtx-cu12
+  version: 12.1.105
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/da/d3/8057f0587683ed2fcd4dbfbdfdfa807b9160b809976099d36b8f60d08f03/nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl
+  hash:
+    sha256: dc21cf308ca5691e7c04d962e213f8a4aa9bbfa23d95412f452254c2caeb09e5
+  category: main
+  optional: false
+- name: orjson
+  version: 3.9.13
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/00/a6/144bfa40294a4401076f64b00834adda56a9c995280081e41f081ac5d909/orjson-3.9.13-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  hash:
+    sha256: 5b98cd948372f0eb219bc309dee4633db1278687161e3280d9e693b6076951d2
+  category: main
+  optional: false
+- name: pydantic
+  version: 2.6.0
+  manager: pip
+  platform: linux-64
+  dependencies:
+    annotated-types: '>=0.4.0'
+    pydantic-core: 2.16.1
+    typing-extensions: '>=4.6.1'
+  url: https://files.pythonhosted.org/packages/e4/37/3ffe6e7daa1ea1b4bf5228807a92ccbae538cf57c0c50b93564c310c11a8/pydantic-2.6.0-py3-none-any.whl
+  hash:
+    sha256: 1440966574e1b5b99cf75a13bec7b20e3512e8a61b894ae252f56275e2c465ae
+  category: main
+  optional: false
+- name: pydantic-core
+  version: 2.16.1
+  manager: pip
+  platform: linux-64
+  dependencies:
+    typing-extensions: '>=4.6.0,<4.7.0 || >4.7.0'
+  url: https://files.pythonhosted.org/packages/a0/7e/96bd9a40f6d5edc3b4566951acac7a8f26e423c77001a7dc065d6200052a/pydantic_core-2.16.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  hash:
+    sha256: 21ebaa4bf6386a3b22eec518da7d679c8363fb7fb70cf6972161e5542f470798
+  category: main
+  optional: false
+- name: pynvml
+  version: 11.5.0
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/5b/9c/adb8070059caaa15d5a572b66bccd95900d8c1b9fa54d6ecea6ae97448d1/pynvml-11.5.0-py3-none-any.whl
+  hash:
+    sha256: 5cce014ac01b098d08f06178f86c37be409b80b2e903a5a03ce15eed60f55e25
+  category: main
+  optional: false
+- name: python-dotenv
+  version: 1.0.1
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/6a/3e/b68c118422ec867fa7ab88444e1274aa40681c606d59ac27de5a5588f082/python_dotenv-1.0.1-py3-none-any.whl
+  hash:
+    sha256: f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a
+  category: main
+  optional: false
+- name: quantile-python
+  version: '1.1'
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/08/16/fae6223773ceae17db7b3ce81479df01ffb30faebbbe63b55fe922c618c0/quantile-python-1.1.tar.gz
+  hash:
+    sha256: 558629e88c497ef3b9b1081349c1ae6a61b53590e317724298ff54c674db7969
+  category: main
+  optional: false
+- name: ray
+  version: 2.9.1
+  manager: pip
+  platform: linux-64
+  dependencies:
+    click: '>=7.0'
+    filelock: '*'
+    jsonschema: '*'
+    msgpack: '>=1.0.0,<2.0.0'
+    packaging: '*'
+    protobuf: '>=3.15.3,<3.19.5 || >3.19.5'
+    pyyaml: '*'
+    aiosignal: '*'
+    frozenlist: '*'
+    requests: '*'
+  url: https://files.pythonhosted.org/packages/75/b8/323aa4967f6d63316d7bf9f54b16d3221e2bc710f8c708da1a881aaa92c9/ray-2.9.1-cp310-cp310-manylinux2014_x86_64.whl
+  hash:
+    sha256: 50436361012cefdd90ebb8c920711cb334cf64d7a5677c9b72e60d8c9e23ee70
+  category: main
+  optional: false
+- name: sentencepiece
+  version: 0.1.99
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/7f/e5/323dc813b3e1339305f888d035e2f3725084fc4dcf051995b366dd26cc90/sentencepiece-0.1.99-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  hash:
+    sha256: 019e7535108e309dae2b253a75834fc3128240aa87c00eb80732078cdc182588
+  category: main
+  optional: false
+- name: starlette
+  version: 0.36.3
+  manager: pip
+  platform: linux-64
+  dependencies:
+    anyio: '>=3.4.0,<5'
+  url: https://files.pythonhosted.org/packages/eb/f7/372e3953b6e6fbfe0b70a1bb52612eae16e943f4288516480860fcd4ac41/starlette-0.36.3-py3-none-any.whl
+  hash:
+    sha256: 13d429aa93a61dc40bf503e8c801db1f1bca3dc706b10ef2434a36123568f044
+  category: main
+  optional: false
+- name: torch
+  version: 2.1.2
+  manager: pip
+  platform: linux-64
+  dependencies:
+    filelock: '*'
+    typing-extensions: '*'
+    sympy: '*'
+    networkx: '*'
+    jinja2: '*'
+    fsspec: '*'
+    nvidia-cuda-nvrtc-cu12: 12.1.105
+    nvidia-cuda-runtime-cu12: 12.1.105
+    nvidia-cuda-cupti-cu12: 12.1.105
+    nvidia-cudnn-cu12: 8.9.2.26
+    nvidia-cublas-cu12: 12.1.3.1
+    nvidia-cufft-cu12: 11.0.2.54
+    nvidia-curand-cu12: 10.3.2.106
+    nvidia-cusolver-cu12: 11.4.5.107
+    nvidia-cusparse-cu12: 12.1.0.106
+    nvidia-nccl-cu12: 2.18.1
+    nvidia-nvtx-cu12: 12.1.105
+    triton: 2.1.0
+  url: https://files.pythonhosted.org/packages/03/f1/13137340776dd5d5bcfd2574c9c6dfcc7618285035cd77240496e5c1a79b/torch-2.1.2-cp310-cp310-manylinux1_x86_64.whl
+  hash:
+    sha256: 3a871edd6c02dae77ad810335c0833391c1a4ce49af21ea8cf0f6a5d2096eea8
+  category: main
+  optional: false
+- name: triton
+  version: 2.1.0
+  manager: pip
+  platform: linux-64
+  dependencies:
+    filelock: '*'
+  url: https://files.pythonhosted.org/packages/4d/22/91a8af421c8a8902dde76e6ef3db01b258af16c53d81e8c0d0dc13900a9e/triton-2.1.0-0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+  hash:
+    sha256: 66439923a30d5d48399b08a9eae10370f6c261a5ec864a64983bae63152d39d7
+  category: main
+  optional: false
+- name: typing-extensions
+  version: 4.9.0
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/b7/f4/6a90020cd2d93349b442bfcb657d0dc91eee65491600b2cb1d388bc98e6b/typing_extensions-4.9.0-py3-none-any.whl
+  hash:
+    sha256: af72aea155e91adfc61c3ae9e0e342dbc0cba726d6cba4b6c72c1f34e47291cd
+  category: main
+  optional: false
+- name: uvicorn
+  version: 0.27.0.post1
+  manager: pip
+  platform: linux-64
+  dependencies:
+    click: '>=7.0'
+    h11: '>=0.8'
+    typing-extensions: '>=4.0'
+    httptools: '>=0.5.0'
+    python-dotenv: '>=0.13'
+    pyyaml: '>=5.1'
+    uvloop: '>=0.14.0,<0.15.0 || >0.15.0,<0.15.1 || >0.15.1'
+    watchfiles: '>=0.13'
+    websockets: '>=10.4'
+  url: https://files.pythonhosted.org/packages/c7/f3/29caa83f5795b20ed3aca357c648f3ae995ff6ff08e38b22387017abbdc5/uvicorn-0.27.0.post1-py3-none-any.whl
+  hash:
+    sha256: 4b85ba02b8a20429b9b205d015cbeb788a12da527f731811b643fd739ef90d5f
+  category: main
+  optional: false
+- name: uvloop
+  version: 0.19.0
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/ab/ed/12729fba5e3b7e02ee70b3ea230b88e60a50375cf63300db22607694d2f0/uvloop-0.19.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  hash:
+    sha256: 5a05128d315e2912791de6088c34136bfcdd0c7cbc1cf85fd6fd1bb321b7c849
+  category: main
+  optional: false
+- name: vllm
+  version: 0.3.0
+  manager: pip
+  platform: linux-64
+  dependencies:
+    ninja: '*'
+    psutil: '*'
+    ray: '>=2.9'
+    sentencepiece: '*'
+    numpy: '*'
+    torch: 2.1.2
+    transformers: '>=4.37.0'
+    xformers: 0.0.23.post1
+    fastapi: '*'
+    uvicorn: '*'
+    pydantic: '>=2.0'
+    aioprometheus: '*'
+    pynvml: 11.5.0
+  url: https://files.pythonhosted.org/packages/6a/94/16b242e4b30d610fca77e00390c3a08b928253104f91b6f93d093886dd74/vllm-0.3.0-cp310-cp310-manylinux1_x86_64.whl
+  hash:
+    sha256: 17da0ee992aa2282907630ccde665d7f253947e240d40706acd6df460cb21ed1
+  category: main
+  optional: false
+- name: watchfiles
+  version: 0.21.0
+  manager: pip
+  platform: linux-64
+  dependencies:
+    anyio: '>=3.0.0'
+  url: https://files.pythonhosted.org/packages/f7/4b/b90dcdc3bbaf3bb2db733e1beea2d01566b601c15fcf8e71dfcc8686c097/watchfiles-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  hash:
+    sha256: b6d45d9b699ecbac6c7bd8e0a2609767491540403610962968d258fd6405c17c
+  category: main
+  optional: false
+- name: websockets
+  version: '12.0'
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/9a/12/c7a7504f5bf74d6ee0533f6fc7d30d8f4b79420ab179d1df2484b07602eb/websockets-12.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+  hash:
+    sha256: 6350b14a40c95ddd53e775dbdbbbc59b124a5c8ecd6fbb09c2e52029f7a9f480
+  category: main
+  optional: false
+- name: xformers
+  version: 0.0.23.post1
+  manager: pip
+  platform: linux-64
+  dependencies:
+    numpy: '*'
+    torch: 2.1.2
+  url: https://files.pythonhosted.org/packages/f4/89/ce8e936d3e64b3b565c16312dd6446d54f6e485f864130702c6b3b3cbe7c/xformers-0.0.23.post1-cp310-cp310-manylinux2014_x86_64.whl
+  hash:
+    sha256: f3491e4b1077314a4535fc78c36b592a13b794eefffaa308db879f7147424a96
+  category: main
+  optional: false
