@@ -636,20 +636,6 @@ package:
     sha256: f0016cbab6ac4138a429e28dbcb904a90305b34b3fe41a9b89d697c90401caec
   category: main
   optional: false
-- name: cloudpathlib
-  version: 0.16.0
-  manager: conda
-  platform: linux-64
-  dependencies:
-    importlib-metadata: ''
-    python: '>=3.7'
-    typing_extensions: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/cloudpathlib-0.16.0-pyhd8ed1ab_0.conda
-  hash:
-    md5: 8d75941f621306e58b7642394a8bad87
-    sha256: e8dbbe729449e173820f15443a2a01e816298401d29b2eec79836546391e8cdf
-  category: main
-  optional: false
 - name: colorama
   version: 0.4.6
   manager: conda
@@ -3614,6 +3600,18 @@ package:
     sha256: 366d28e2a0a191d6c535e234741e0cd1d94d713f76073d8af4a5ccb2a266121e
   category: main
   optional: false
+- name: platformdirs
+  version: 4.2.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.8'
+  url: https://conda.anaconda.org/conda-forge/noarch/platformdirs-4.2.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: a0bc3eec34b0fab84be6b2da94e98e20
+    sha256: 2ebfb971236ab825dd79dd6086ea742a9901008ffb9c6222c1f2b5172a8039d3
+  category: main
+  optional: false
 - name: pluggy
   version: 1.4.0
   manager: conda
@@ -3641,6 +3639,21 @@ package:
   hash:
     md5: 9608faaebcfdda981bf9e996bbe59c27
     sha256: 8f1c649e3a813d3714ee7a32d56f88402dd852a43301ca3e962290692f97f3f2
+  category: main
+  optional: false
+- name: pooch
+  version: 1.8.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    packaging: '>=20.0'
+    platformdirs: '>=2.5.0'
+    python: '>=3.7'
+    requests: '>=2.19.0'
+  url: https://conda.anaconda.org/conda-forge/noarch/pooch-1.8.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: 134b2b57b7865d2316a7cce1915a51ed
+    sha256: 51b02987370bbff28dbf782063c23e3b264aa34173b344454203cd691946e077
   category: main
   optional: false
 - name: preshed
@@ -4265,7 +4278,7 @@ package:
   category: main
   optional: false
 - name: scipy
-  version: 1.12.0
+  version: 1.10.1
   manager: conda
   platform: linux-64
   dependencies:
@@ -4273,16 +4286,17 @@ package:
     libcblas: '>=3.9.0,<4.0a0'
     libgcc-ng: '>=12'
     libgfortran-ng: ''
-    libgfortran5: '>=12.3.0'
+    libgfortran5: '>=12.2.0'
     liblapack: '>=3.9.0,<4.0a0'
     libstdcxx-ng: '>=12'
-    numpy: '>=1.22.4,<2.0a0'
+    numpy: '>=1.21.6,<2.0a0'
+    pooch: ''
     python: '>=3.10,<3.11.0a0'
     python_abi: 3.10.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/scipy-1.12.0-py310hb13e2d6_2.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/scipy-1.10.1-py310ha4c1d20_3.conda
   hash:
-    md5: cd3baec470071490bc5ab05da64c52b5
-    sha256: 336c5c1b29441b99033375d084ed24a65bea852a02b3c79954134fc5ada8c6c4
+    md5: 0414d57832172f3cdcf56b5f053e177d
+    sha256: c7beb091db82a1be2fa9dafb878695b1e8bd6d7efe7764afa457cabfea2a93d3
   category: main
   optional: false
 - name: sentence-transformers
@@ -4430,7 +4444,7 @@ package:
   category: main
   optional: false
 - name: spacy
-  version: 3.7.2
+  version: 3.6.1
   manager: conda
   platform: linux-64
   dependencies:
@@ -4441,7 +4455,7 @@ package:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
     murmurhash: '>=0.28.0,<1.1.0'
-    numpy: '>=1.22.4,<2.0a0'
+    numpy: '>=1.21.6,<2.0a0'
     packaging: '>=20.0'
     pathy: '>=0.10.0'
     preshed: '>=3.0.2,<3.1.0'
@@ -4454,15 +4468,14 @@ package:
     spacy-legacy: '>=3.0.11,<3.1.0'
     spacy-loggers: '>=1.0.0,<2.0.0'
     srsly: '>=2.4.3,<3.0.0'
-    thinc: '>=8.1.8,<8.3.0'
+    thinc: '>=8.1.8,<8.2.0'
     tqdm: '>=4.38.0,<5.0.0'
     typer: '>=0.3.2,<0.10.0'
     wasabi: '>=0.9.1,<1.2.0'
-    weasel: '>=0.1.0,<0.4.0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/spacy-3.7.2-py310hcb52e73_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/spacy-3.6.1-py310hfb6f7a9_0.conda
   hash:
-    md5: c966d5a09c130d0bcfce4126643ddc74
-    sha256: 8fad20cc027c76b53f46ee3cb3e489271565374111d29a32f30126fb2be88c05
+    md5: 93e295242712d7be4dadcd614f14713a
+    sha256: ebac02f7b442c10cf4d9c296a0c25150541e6d232aa2fba9c541841ca93f7ae6
   category: main
   optional: false
 - name: spacy-legacy
@@ -4732,7 +4745,7 @@ package:
   category: main
   optional: false
 - name: thinc
-  version: 8.2.2
+  version: 8.1.12
   manager: conda
   platform: linux-64
   dependencies:
@@ -4743,7 +4756,7 @@ package:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
     murmurhash: '>=1.0.2,<1.1.0'
-    numpy: '>=1.22.4,<2.0a0'
+    numpy: '>=1.21.6,<2.0a0'
     packaging: '>=20.0'
     preshed: '>=3.0.2,<3.1.0'
     pydantic: '>=1.7.4,!=1.8,!=1.8.1,<3.0.0'
@@ -4751,10 +4764,10 @@ package:
     python_abi: 3.10.*
     srsly: '>=2.4.0,<3.0.0'
     wasabi: '>=0.8.1,<1.2.0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/thinc-8.2.2-py310hcb52e73_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/thinc-8.1.12-py310hfb6f7a9_0.conda
   hash:
-    md5: 550b37537f05740f1c9a38d63d843b3c
-    sha256: 3407eae92df886b33fdf80f78da7388097696fe3dc4edf760e55f679bf19e4fd
+    md5: e31ca9639558da7b04c9b79e31595288
+    sha256: 241fb3251aeaa6fe88bace96e8dc14a342bb9434341f91bb76ac125eff446cf4
   category: main
   optional: false
 - name: threadpoolctl
@@ -5004,27 +5017,6 @@ package:
   hash:
     md5: 8ed9f04ed8e1373063cd03b9d5c86ce3
     sha256: 5677b16ba9d311a0c28c0193244551e34763703294eeca0a64b8bdda3805c55b
-  category: main
-  optional: false
-- name: weasel
-  version: 0.3.4
-  manager: conda
-  platform: linux-64
-  dependencies:
-    cloudpathlib: '>=0.7.0,<0.17.0'
-    confection: '>=0.0.4,<0.2.0'
-    packaging: '>=20.0'
-    pydantic: '>=1.7.4,!=1.8,!=1.8.1,<3.0.0'
-    python: '>=3.6'
-    requests: '>=2.13.0,<3.0.0'
-    smart_open: '>=5.2.1,<7.0.0'
-    srsly: '>=2.4.3,<3.0.0'
-    typer: '>=0.3.0,<0.10.0'
-    wasabi: '>=0.9.1,<1.2.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/weasel-0.3.4-pyhd8ed1ab_0.conda
-  hash:
-    md5: a53c82e61a1173c887e84fc50842eec4
-    sha256: bd2f44d40c2d655c03aa2376adf02699e42e3ccc03b72f4004d6a4be17bf8808
   category: main
   optional: false
 - name: werkzeug
@@ -5378,5 +5370,67 @@ package:
   hash:
     md5: 04b88013080254850d6c01ed54810589
     sha256: 607cbeb1a533be98ba96cf5cdf0ddbb101c78019f1fda063261871dad6248609
+  category: main
+  optional: false
+- name: conllu
+  version: 4.5.3
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/ce/3f/70a1dc5bc536755ec082b806594598a10cfffaf0de978f51d4e0e4fdfa47/conllu-4.5.3-py2.py3-none-any.whl
+  hash:
+    sha256: 2b962b315c3c575e429105d045c888726df780b87a6dfe7609367e861990902d
+  category: main
+  optional: false
+- name: nmslib
+  version: 2.1.1
+  manager: pip
+  platform: linux-64
+  dependencies:
+    pybind11: <2.6.2
+    psutil: '*'
+    numpy: '>=1.10.0'
+  url: https://files.pythonhosted.org/packages/47/c8/e1bb26c70bd692d1d27fdfb08c0e06fea815d4a75027605479c612576b30/nmslib-2.1.1.tar.gz
+  hash:
+    sha256: 971294a7766f91c697d63c88c8adda4797a944346cc535a217393f4167a19c20
+  category: main
+  optional: false
+- name: pybind11
+  version: 2.6.1
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/00/84/fc9dc13ee536ba5e6b8fd10ce368fea5b738fe394c3b296cde7c9b144a92/pybind11-2.6.1-py2.py3-none-any.whl
+  hash:
+    sha256: c3691da74b670a4850dec30c1145a0dad53a50eeca78b7e7cdc855b5c98fd32d
+  category: main
+  optional: false
+- name: pysbd
+  version: 0.3.4
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/48/0a/c99fb7d7e176f8b176ef19704a32e6a9c6aafdf19ef75a187f701fc15801/pysbd-0.3.4-py3-none-any.whl
+  hash:
+    sha256: cd838939b7b0b185fcf86b0baf6636667dfb6e474743beeff878e9f42e022953
+  category: main
+  optional: false
+- name: scispacy
+  version: 0.5.3
+  manager: pip
+  platform: linux-64
+  dependencies:
+    spacy: '>=3.6.0,<3.7.0'
+    scipy: <1.11
+    requests: '>=2.0.0,<3.0.0'
+    conllu: '*'
+    numpy: '*'
+    joblib: '*'
+    nmslib: '>=1.7.3.6'
+    scikit-learn: '>=0.20.3'
+    pysbd: '*'
+  url: https://files.pythonhosted.org/packages/9f/1c/f5870c2380f0de7d51ed33bfd5259dd5867251904ac9d01a6688c4a349f6/scispacy-0.5.3-py3-none-any.whl
+  hash:
+    sha256: 801678e32a16fad1e25833bd57fb8e20c188cb972220cd8fd87d1bbaa698f433
   category: main
   optional: false
