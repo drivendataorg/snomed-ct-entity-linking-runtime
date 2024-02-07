@@ -2,8 +2,11 @@
 
 ## 2024-02-07
 
-- Added [`scispacy`](https://github.com/allenai/scispacy/tree/main) via pip
-- Added [`vllm`](https://github.com/vllm-project/vllm) via pip and direct release download for CPU & GPU support
+- Added [`scispacy`](https://github.com/allenai/scispacy/tree/main) via pip 
+    - Notable regressions in other package versions
+        - `spacy: 3.7.2 -> 3.6.1`
+        - `scipy: 1.12.0 -> 1.10.1`
+- Added [`vllm`](https://github.com/vllm-project/vllm) via pip (direct release download for CPU & GPU support)
 
 ## 2024-01-31
 
