@@ -21,7 +21,7 @@ permissions:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: snomed-ubuntu-22.04-8core
     strategy:
       matrix:
         proc: ["cpu", "gpu"]
@@ -39,6 +39,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Disk information
+        run: |
+          df -h
 
       - name: Build Image
         run: |

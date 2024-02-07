@@ -17,6 +17,8 @@ packages = [
     "tensorflow",
     "torch",
     "transformers",
+    "ray",
+    "vllm",
 ]
 
 
@@ -94,3 +96,13 @@ def test_faiss_n_gpus():
     import faiss
 
     assert faiss.get_num_gpus() > 0
+
+def test_ray():
+    import ray
+
+    ray.init()
+    assert ray.is_initialized()
+    ray.shutdown()
+
+def test_vllm():
+    from vllm import LLM, SamplingParams
