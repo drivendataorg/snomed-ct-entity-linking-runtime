@@ -29,6 +29,8 @@ RUN if [ "$CPU_OR_GPU" = "gpu" ]; then \
     pip install https://github.com/vllm-project/vllm/releases/download/v0.3.0/vllm-0.3.0-cp310-cp310-manylinux1_x86_64.whl --no-cache-dir ; \
     fi
 
+RUN curl -fsSL https://ollama.com/install.sh | sh
+
 RUN mkdir /code_execution
 RUN chown -R ${MAMBA_USER}:${MAMBA_USER} /code_execution
 
