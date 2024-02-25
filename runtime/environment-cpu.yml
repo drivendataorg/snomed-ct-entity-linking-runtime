@@ -40,3 +40,4 @@ dependencies:
   - xarray=2024.1.1
   - pip:
     - scispacy==0.5.3
+    - lancedb==0.5.7
