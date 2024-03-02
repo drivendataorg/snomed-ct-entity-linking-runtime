@@ -33,7 +33,7 @@ dependencies:
   - scikit-learn=1.4.0
   - scipy=1.10.1
   - sentencepiece=0.1.99
-  - sentence-transformers=2.3.1
+  - sentence-transformers=2.5.1
   - spacy=3.6.1
   - statsmodels=0.14.1
   - tensorflow-base=2.14.0=cuda118*
