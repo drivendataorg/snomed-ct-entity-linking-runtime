@@ -44,3 +44,5 @@ dependencies:
   - xformers::xformers=0.0.23.post1=*cu11.8*
   - pip:
     - scispacy==0.5.3
+    - chromadb
+    - sacremoses
