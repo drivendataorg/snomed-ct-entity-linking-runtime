@@ -12,6 +12,7 @@ dependencies:
   - einops=0.7.0
   - faiss-gpu=1.7.4
   - gensim=4.3.2
+  - huggingface_hub=0.20.2
   - jsonpickle=3.0.2
   - keras=2.14.0
   - langchain=0.1.5
@@ -43,4 +44,8 @@ dependencies:
   - xarray=2024.1.1
   - xformers::xformers=0.0.23.post1=*cu11.8*
   - pip:
+    - chromadb==0.4.13
+    - grpcio==1.54.3
+    - importlib-metadata==7.0.1
+    - sacremoses==0.1.1
     - scispacy==0.5.3
