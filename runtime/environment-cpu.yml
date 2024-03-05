@@ -45,3 +45,4 @@ dependencies:
     - importlib-metadata==7.0.1
     - sacremoses==0.1.1
     - scispacy==0.5.3
+    -  git+https://github.com/OntoGene/OGER.git
